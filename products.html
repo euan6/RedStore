@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedStore </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+  <link rel="shortcut icon" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- header of page with nav -->
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="menuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      <img src="images/menu.png" class="menu-icon"
+      onclick="menutoggle()">
+    </div>
+  </div>
+  
+  <div class="small-container">
+
+    <div class="row row-2">
+      <h2>All Products</h2>
+      <select>
+        <option>Defaul sorting</option>
+        <option>Sort by price</option>
+        <option>Sort by popularity</option>
+        <option>Sort by rating</option>
+        <option>Sort by sale</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <a href="redTshirt.html">
+        <img src="images/product-1.jpg">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£50.00</p>
+        </a>
+      </div>
+      <div class="col-4">
+        <img src="images/product-2.jpg">
+        <h4>Black Running Shoes</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£60.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-3.jpg">
+        <h4>Grey Joggies</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£35.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-4.jpg">
+        <h4>Navy Polo Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£40.00</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img src="images/product-5.jpg">
+        <h4>Grey High-Tops</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£80.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-6.jpg">
+        <h4>Black T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£20.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-7.jpg">
+        <h4>Socks 3 Pack</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£10.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-8.jpg">
+        <h4>Black Fossil Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£240.00</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img src="images/product-9.jpg">
+        <h4>Black Leather Watch</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£180.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-10.jpg">
+        <h4>Black Trainers</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£45.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-11.jpg">
+        <h4>Grey Slip-ons</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£35.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/product-12.jpg">
+        <h4>Black Nike Joggies</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <p>£55.00</p>
+      </div>
+    </div>
+
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download our app for Android and ios on mobile</p>
+          <div class="app-logo">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vero illo itaque perspiciatis esse sequi architecto.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+    </div>
+  </div>
+  
+  <script src="menu.js"></script>
+
+</body>
+</html>
